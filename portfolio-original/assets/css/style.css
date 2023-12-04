@@ -1,0 +1,302 @@
+:root{
+  --blue:rgb(170, 208, 232);
+  --grey:rgb(51, 52, 68);
+  
+}
+
+
+
+
+header{
+  background-color: var(--grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul{
+  margin-right: 30px;
+  display: flex;
+  align-content: center;
+  gap: 15px;
+  list-style-type: none;
+}
+
+li a{
+font-family: 'Hind Siliguri', sans-serif;
+  color: var(--blue);
+  text-underline-offset: 5px;
+  text-decoration-thickness: 3px;
+  
+
+}
+
+li a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+h1{
+  padding:5px 5px 5px 40px;
+  color: rgb(74, 74, 74);
+  background-color: var(--blue);
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0 50px 0;
+  background-color: rgb(218, 217, 225);
+  
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap:40px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.image-wrapper img {
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.introduce-me {
+  text-align: center;
+  
+}
+
+h2{
+  margin-bottom: 0px;
+  color: var(--grey);
+  font-family: 'Poppins', sans-serif;
+}
+h3{
+  font-size: 100px;
+  margin: 0px;
+  color: var(--grey);
+}
+
+.introduce-me p{
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 0px;
+  color: var(--grey)
+
+  
+  
+}
+
+#about-me, #projects{
+  display: flex;
+padding: 50px 100px;
+
+
+}
+
+.first-paragraph, .work, .in-touch{
+font-weight: bold;
+
+font-size: 30px;
+ color: var(--grey);
+}
+
+.second-paragraph, .grid, .contacts{
+  display: flex;
+  gap: 15px;
+margin-left: 20px;
+padding-left: 20px;
+border-left: 4px solid rgb(147, 147, 147);
+font-size: 15px;
+font-family: 'Poppins', sans-serif;
+
+}
+
+#forecast {
+  background-image: url(../images/forecast.jpg);
+  grid-area: forecast;
+}
+
+#clock {
+  background-image: url(../images/clock.jpeg);
+  grid-area: clock;
+}
+
+#prework{
+  background-image: url(../images/prework.jpeg);
+    grid-area: prework;
+}
+
+#poetry{
+  background-image: url(../images/poetry.jpeg);
+    grid-area: poetry;
+}
+
+#portfolio{
+  background-image: url(../images/portfolio1.webp);
+    grid-area: portfolio;
+
+}
+
+
+.grid-area {
+  position: relative;
+  cursor:pointer;
+  display: grid;
+  background-repeat:no-repeat;
+  margin: 12px;
+  background-size: cover;
+  cursor: pointer;
+
+  
+}
+
+
+
+.project-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--grey);
+  text-align: start;
+  
+}
+
+.grid{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 200px 200px;
+  grid-template-areas: "forecast forecast"
+  "clock prework" "poetry portfolio";
+}
+
+.project-name h4 {
+  color: antiquewhite;
+  margin: 0 30px;
+}
+
+#contact-me{
+  display: flex;
+ 
+}
+ .in-touch{
+  margin-left: 20px;
+  
+ }
+.contacts{
+  display: flex;
+  font-size: 20px;
+  text-align: center;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: blue;
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+ h1{
+  display: none;
+ }
+ nav{
+  width: 100%;
+ }
+ 
+ul{
+  justify-content: center;
+}
+ .intro{
+  margin-top: 10px;
+ }
+
+.content-wrapper{
+  display: block;
+}
+ 
+.image-wrapper img {
+  width: 150px;
+  height: auto;
+  border-radius: 15px;
+  
+
+}
+ .image-wrapper{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.image-wrapper img{
+  max-width: 100%;
+    max-height: 100%;
+}
+h3 {
+  font-size: 60px;
+  margin: 0px;
+  
+}
+.introduce-me p{
+  font-size:18px;
+}
+#about-me{
+ padding: 5px;
+ display: block;
+ 
+}
+
+.first-paragraph, .work{ 
+ font-size: 20px;
+ text-align:left;
+ text-align: center;
+ border-bottom: 1px solid black;
+}
+
+.second-paragraph{
+  display: block;
+  font-size: 13px;
+  margin: 20px 0;
+  border: none;
+  padding: 10px;
+}
+
+#projects{
+  display: block;
+  padding: 0px;
+}
+
+.grid{
+  border: none;
+  padding: 0px;
+  margin: 20px 0;
+  gap: 5px;
+}
+
+.in-touch{
+  font-size: 20px;
+  text-align: end;
+}
+
+.contacts{
+  font-size: 15px;
+} 
+
+#contact-me{
+  padding-bottom: 40px;
+}
+#contact-me .contacts{
+
+border: none;
+}
+}
