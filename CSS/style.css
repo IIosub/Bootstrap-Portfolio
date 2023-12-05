@@ -3,13 +3,14 @@
   --dark:rgb(43, 71, 100);
 }
 body{
-  background-color: rgb(190, 190, 190);
+  background-color: rgb(219, 200, 200)
 }
 
-
-nav{
-  overflow: hidden;
+h2{
+  font-family: Optima,
+    sans-serif;;
 }
+
 
 header{
   text-align: center;
@@ -24,4 +25,16 @@ header img{
 .work{
   display: flex;
   justify-content: center;
+}
+
+.project-1{
+  background-color: rgb(148, 93, 148);
+}
+
+.project-2{
+  background-color: lightblue;
+}
+
+.project-3{
+  background-color: rgb(157, 207, 157);
 }
