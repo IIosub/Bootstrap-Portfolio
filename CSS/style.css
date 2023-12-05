@@ -1,7 +1,27 @@
+
+:root{
+  --dark:rgb(43, 71, 100);
+}
 body{
-  background-color: rgb(209, 221, 221);
+  background-color: rgb(190, 190, 190);
 }
 
+
 nav{
-  
+  overflow: hidden;
+}
+
+header{
+  text-align: center;
+  color: var(--dark)
+}
+
+header img{
+  width: 200px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.work{
+  display: flex;
+  justify-content: center;
 }
