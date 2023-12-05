@@ -38,3 +38,11 @@ header img{
 .project-3{
   background-color: rgb(157, 207, 157);
 }
+
+#contact-me{
+  background-color: rgb(228, 182, 219);
+}
+#contact-me img{
+  width: 50px;
+  margin-right: 20px;
+}
