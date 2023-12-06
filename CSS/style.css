@@ -1,20 +1,31 @@
 
 :root{
   --dark:rgb(43, 71, 100);
-  --pink: rgb(240, 216, 235);
+  --pink: rgb(242, 227, 239);
+  --transform: scale(1.04);
+  --font:Optima,
+    sans-serif;
   --shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 body{
-  background-color: rgb(228, 190, 228)
+  background-color: rgb(235, 217, 235)
 }
 
 nav{
   background-color:var(--pink) ;
 }
 
+nav a:hover{
+transform: var(--transform);
+text-decoration: underline;
+font-weight: bold;
+font-family: var(--font);
+}
+
 h2{
   font-family: Optima,
-    sans-serif;;
+    sans-serif;
 }
 
 
@@ -25,7 +36,7 @@ header{
 
 header img{
   width: 200px;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: var(--shadow);
 }
 
 .work{
@@ -52,6 +63,10 @@ header img{
   width: 50px;
   margin-right: 20px;
 }
+#contact-me img:hover{
+  box-shadow: var(--shadow);
+  transform: var(--transform);
+}
 
 .btn:hover {
   transform: scale(1.19);
@@ -59,6 +74,21 @@ header img{
 }
 
 .card:hover {
-  transform: scale(1.04);
+  transform: var(--transform);
  -webkit-filter: var(--shadow)
 }
+
+#projects img{
+  height: 80%;
+}
+
+#my-skills img:hover{
+box-shadow: var(--shadow);
+}
+
+footer{
+  font-family: var(--font);
+  font-size: 20px;
+}
+
+
