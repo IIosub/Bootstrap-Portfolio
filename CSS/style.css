@@ -3,7 +3,7 @@
   --dark:rgb(43, 71, 100);
   --pink: rgb(242, 227, 239);
   --transform: scale(1.04);
-  --font:Optima,
+  --font: Optima,
     sans-serif;
   --shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -63,22 +63,14 @@ header img{
   width: 50px;
   margin-right: 20px;
 }
-#contact-me img:hover{
-  box-shadow: var(--shadow);
-  transform: var(--transform);
-}
 
-.btn:hover {
-  transform: scale(1.19);
+.btn:hover, footer img:hover, #contact-me img:hover, .card:hover {
+  transform: scale(1.04);
   box-shadow: var(--shadow);
 }
 
-.card:hover {
-  transform: var(--transform);
- -webkit-filter: var(--shadow)
-}
 
-#projects img{
+#projects img {
   height: 80%;
 }
 
@@ -90,5 +82,14 @@ footer{
   font-family: var(--font);
   font-size: 20px;
 }
+footer img{
+  width: 40px;
+}
+
+.link:hover{
+  color: rgb(125, 41, 131);
+  font-weight: bold;
+}
+
 
 
