@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-
+  <link rel="font-awesome" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <link rel="stylesheet" href="./CSS/style.css">
   <title>Bootsrap-Portfolio-Ioana-Iosub</title>
@@ -15,8 +15,8 @@
 
 <body>
   <!--Nav-Bar-->
-  <nav class="navbar navbar-expand-lg ">
-    <a class="navbar-brand" href="#"> <span class="name ps-5">Ioana Iosub</span></a>
+  <nav id="nav-bar" class="navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="http://127.0.0.1:3000/index.html"> <span class="name ps-5">Ioana Iosub</span></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -43,38 +43,15 @@
     <p class="lead display-4"> I'm Ioana Iosub</p>
     <img src="./images/ioana2.jpg" class="rounded float-right" alt="...">
     <p class="pt-3">Front-End Developer based in London, UK.</p>
-    <a class="btn btn-secondary btn-lg" href="#contact-me" role="button">Contact-Me</a>
+
     <hr class="my-4">
   </header>
 
-  <!--About-Me-->
-
-  <section id="about-me" class="p-5">
-    <h2>About-Me</h2>
-    <p>After graduating from Anglia Ruskin University in Paramedic Sciences and gaining experience at the London
-      Ambulance Services, I
-      felt the urge to shift gears after working in healthcare for a few years. Encouraged by my partner, who's a
-      senior
-      full-stack developer, and after conducting research, I ventured into web development. Along this journey, I've
-      crafted
-      some practical apps using CSS, HTML, and JavaScript.
-    </p>
-    <p>Beyond tech, I'm an enthusiastic traveler, spending months
-      exploring new destinations and relishing diverse cuisines worldwide. I have traveled to over 30 countries at
-      just 27 years old, which is something I am very proud of. In my free time, I enjoy playing rugby and
-      engaging
-      in bouldering activities.
-    </p>
-
-
-  </section>
 
   <!--Work-->
   <section id="projects" class="p-2">
-    <h2>Work</h2>
-
-
-    <div class="row mb-3 text themed-grid-col work p-5">
+    <h2 class="mx-5">Work</h2>
+    <div class="row themed-grid-col mb-3 p-5">
       <div class="col-lg-12 col-md-12 col-sm-12 themed-grid-col d-flex justify-content-center">
 
         <!--  First Project -->
@@ -83,29 +60,31 @@
           <div class="card-body  p-4 project-1">
             <h2 class="card-title body text-light">Weather App</h2>
             <p class="card-text text-light"> This project is very special to me as I have invested lots of time and
-              effort to creat it, also Iit is my very first project using Vanila JavaScript and API's.</p>
+              effort to creat it, also it is my very first project using Vanila JavaScript and API's. <br> Technologies:
+              HTML, CSS, JavaScript, API </p>
             <a href="https://lambent-figolla-996abb.netlify.app" target="_blank" class="btn btn-outline-light">Try It
               Out</a>
           </div>
         </div>
       </div>
 
-
       <!-- Second Project  -->
-      <div class="row gy-3 row-cols-lg2 row-cols-md-2 row-cols-sm-1 g-4">
+      <div class="row  row-cols-lg-2 row-cols-md-2 row-cols-sm-1 g-4 gy-3">
         <div class="col-sm">
           <div class="card shadow h-100">
             <img src="./images/clock.jpeg" class="card-img-top img-size"
               alt="This mini-project was created using Vanila JavaScript, HTML and CSS.">
             <div class="card-body body  p-4 project-2">
               <h2 class="card-title text-light">Clock App</h2>
-              <p class="card-text text-light">This is a Clock App that I have created using Vanila JavaScript, HTML and
+              <p class="card-text text-light">This is a World Clock App that I have created using Vanila JavaScript,
+                HTML and
                 CSS. </p>
               <a href="https://world-clock-project2023.netlify.app/" target="_blank" class="btn btn-outline-light">Try
                 It Out</a>
             </div>
           </div>
         </div>
+
         <!--  Third Project  -->
         <div class="col-sm">
           <div class="card shadow h-100">
@@ -113,16 +92,22 @@
               alt="Web page in white background and red and black details in the page for a steak restaurant">
             <div class="card-body body p-4 project-3">
               <h2 class="card-title text-light">Porfolio</h2>
-              <p class="card-text text-light"> This was the very first project created during the edX Bootcam </p>
+              <p class="card-text text-light"> This was the very first project created during the edX Bootcam. </p>
               <a href="https://iiosub.github.io/ioana-iosub-portfolio/" target="_blank"
                 class="btn btn-outline-light">Click Here</a>
             </div>
           </div>
         </div>
 
+
+
+
       </div>
+
+    </div>
   </section>
 
+  <!--Skills-->
   <section id="my-skills" class="text-center g-col-6">
     <h3>My Skills</h3>
     <img src="./images/html (1).png" alt="HTML">
@@ -132,31 +117,46 @@
     <img src="./images/gitlab.png" alt="GitLab">
   </section>
 
-  <section id="contact-me" class="p-4 mt-5 mx-5 d-flex  ">
-    <h2>Contact me: </h2>
-    <a href="mailto:stu.waltham@gmail.com" target="_blank">
-      <img src="/images/email.png" alt="email" class="mx-3">
-    </a>
-    <a href="https://github.com/IIosub" target="_blank">
-      <img src="./images/github.png" alt="git">
-    </a>
+  <section>
+    <div class="row col-gap-3 col-lg-12 col-md-12 col-lg-12  mb-2 text-center p-5">
 
+      <div id="about-me" class=" col themed-grid-col">
+        <h2>About-Me</h2>
+        <p>After graduating from Anglia Ruskin University in Paramedic Sciences and gaining experience at the London
+          Ambulance Services, I
+          felt the urge to shift gears after working in healthcare for a few years. Encouraged by my partner, who's a
+          senior
+          full-stack developer, and after conducting research, I ventured into web development. Along this journey, I've
+          crafted
+          some practical apps using CSS, HTML, and JavaScript.
+        </p>
+        <p>Beyond tech, I'm an enthusiastic traveler, spending months
+          exploring new destinations and relishing diverse cuisines worldwide. I have traveled to over 30 countries at
+          just 27 years old, which is something I am very proud of. In my free time, I enjoy playing rugby and
+          engaging
+          in bouldering activities.
+        </p>
+      </div>
+
+      <div class="col-md text-center mt-5 p-5" id="contact-me">
+        <h2>Contact me: </h2>
+        <a href="mailto:stu.waltham@gmail.com" target="_blank">
+          <img src="/images/email.png" alt="email" class="mx-3">
+        </a>
+        <a href="https://github.com/IIosub" target="_blank">
+          <img src="./images/github.png" alt="git">
+        </a>
+      </div>
   </section>
 
 
 
 
   <footer>
-
+    <p class="text-center p-5">- <a class="text-decoration-none" href="https://github.com/IIosub">Open Source</a> by
+      Ioana Iosub - </p>
+    <a href="nav-bar"><i class="fa-solid fa-arrow-up-to-line"></i></a>
   </footer>
-
-
-
-
-
-
-
-
 
 
 
