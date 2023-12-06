@@ -32,4 +32,17 @@ As a software developer I have to create a portfolion using bootrap, making sure
 
 3. In the next step I created a jumbotron containing my pictures and few thing about myself. I have used boostrap to that.
 
-4.
+4. After the hero section, a work section has been created using bootsrap grids and cards for each project.
+
+5. The about me and contact me have been placed togeder in the same raw using bootstrap grid
+
+6. Finaly a footer has been added which contains a link to my github and also an image/icon that takes you to the top of the page.
+
+## Link of the projects:
+
+Weather App: https://lambent-figolla-996abb.netlify.app/
+Clock App: https://lambent-figolla-996abb.netlify.app/
+edx Poertfolio: https://iiosub.github.io/ioana-iosub-portfolio/
+bootstrap Portfolio: https://iiosub.github.io/Bootstrap-Portfolio/
+
+## ShootScreen
